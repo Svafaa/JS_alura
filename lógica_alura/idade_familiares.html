@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+
+}
+
+function print(frase) {
+
+    document.write(frase);
+    pulaLinha();
+
+}
+
+var fam = parseInt(prompt("Quantidade de parentes:"));
+var total = 0;
+for(var i=1; i<=fam; i++)
+{     
+    var idades=parseInt(prompt("Informe a idade do parente:"));
+    total = total+idades;
+}
+var media= total/fam;
+print("A média das idades é "+ Math.round(media));
+</script>

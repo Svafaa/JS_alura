@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function print(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+
+var wins = parseInt(prompt("Insira o número de vitórias: "));
+var empate = parseInt(prompt("Insira o número de empates: "));
+var pontos = wins*3 + empate;
+
+
+print("Os pontos totais do time são:" +Math.round(pontos));
+
+if (pontos>28)
+{
+    print("Seu time está melhor do que a última temporada");
+}
+if (pontos<28)
+{
+    print("Seu time está pior do que a última temporada");
+}
+if (pontos==28)
+{
+    print("Seu time está igual à última temporada");
+}
+
+print("Fim do programa");
+
+</script>
